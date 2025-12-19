@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-label="Shais Chaudhry, Senior AI Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#0f1622"/>
+      <stop offset="100%" stop-color="#131c2b"/>
+    </linearGradient>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#1c2534" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#0d1117" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="45%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="270" fill="url(#bg)"/>
+  <rect width="1200" height="270" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- retrieval graph motif: nodes fused into one answer node -->
+  <g stroke="#1e3a5f" stroke-width="1.4" fill="none" opacity="0.95">
+    <path d="M812 74 L960 135"/><path d="M812 74 L905 62"/>
+    <path d="M905 62 L1040 78"/><path d="M905 62 L960 135"/>
+    <path d="M1040 78 L960 135"/><path d="M1040 78 L1108 148"/>
+    <path d="M960 135 L1108 148"/><path d="M960 135 L1022 206"/>
+    <path d="M1022 206 L1108 148"/><path d="M846 176 L960 135"/>
+    <path d="M846 176 L1022 206"/><path d="M812 74 L846 176"/>
+  </g>
+  <g fill="#0f1622" stroke="#2b4a72" stroke-width="1.6">
+    <circle cx="812" cy="74" r="6"/><circle cx="905" cy="62" r="5"/>
+    <circle cx="1040" cy="78" r="6"/><circle cx="1108" cy="148" r="5"/>
+    <circle cx="1022" cy="206" r="6"/><circle cx="846" cy="176" r="5"/>
+  </g>
+  <circle cx="960" cy="135" r="11" fill="#0b3b3a" stroke="#2dd4bf" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.35;1" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="960" cy="135" r="11" fill="none" stroke="#2dd4bf" stroke-width="1.2" opacity="0.5">
+    <animate attributeName="r" values="11;30" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <rect width="1200" height="270" fill="url(#fade)"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+    <text x="64" y="72" font-size="13" fill="#4b6178">shais@workstation:~$ cat identity.toml</text>
+
+    <text x="64" y="132" font-size="44" font-weight="700" fill="#e6edf3" letter-spacing="-0.6">Shais Chaudhry</text>
+    <rect x="431" y="103" width="12" height="36" fill="#2dd4bf">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.15s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="64" y="150" width="360" height="2.5" fill="url(#rule)"/>
+
+    <text x="64" y="184" font-size="16" fill="#8b9cb0">
+      <tspan fill="#2dd4bf">Senior AI Engineer</tspan><tspan fill="#3d4f63"> // </tspan><tspan>machine learning, computer vision, cloud infrastructure</tspan>
+    </text>
+
+    <text x="64" y="218" font-size="13" fill="#5b7086">
+      <tspan fill="#3d4f63">location </tspan><tspan fill="#8b9cb0">Lahore, PK</tspan>
+      <tspan fill="#3d4f63" dx="18">overlap </tspan><tspan fill="#8b9cb0">PST · EST · CET</tspan>
+      <tspan fill="#3d4f63" dx="18">since </tspan><tspan fill="#8b9cb0">2021</tspan>
+    </text>
+  </g>
+</svg>
